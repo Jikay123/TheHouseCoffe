@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/coffee_1"/>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_toRightOf="@+id/imgProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Macca Phủ Socola"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"
+                android:text="40.000 đ"
+                />
+            <LinearLayout
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_favorite_border"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Yêu thích"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giới thiệu món"
+        android:textSize="20sp"
+        android:background="#EFEBEB"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:padding="10dp"
+        android:background="@drawable/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sô cô là thơm lừng bao bọc hạt Mác ca bùi béo thiệt ngon - món ăn vặt đắng nhẹ, ngọt ngào không thể thiếu cho mùa giáng sinh ấm áp. "
+        android:textSize="15sp"
+        android:textColor="@color/black"
+
+        />
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/buttonSub"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add"/>
+        <TextView
+            android:id="@+id/amount"
+            android:layout_toRightOf="@+id/buttonSub"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textSize="20sp"/>
+        <ImageView
+            android:layout_toRightOf="@+id/amount"
+            android:layout_centerVertical="true"
+            android:id="@+id/buttonAdd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add"/>
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="45.000 đ"
+            android:textColor="@color/white"
+            android:background="@drawable/button"/>
+    </RelativeLayout>
+
+</LinearLayout>

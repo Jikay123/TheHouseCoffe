@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bg_top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/pattern"
+        android:scaleType="centerCrop"/>
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/bg_top"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txt_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="#DD8D18"/>
+    <LinearLayout
+        android:id="@+id/input_gmail"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/txt_logo"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_logo"
+            android:drawableLeft="@drawable/ic_baseline_person" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/input_pass"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/input_gmail"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="20sp"
+            android:textColor="#000"/>
+
+        <EditText
+            android:id="@+id/edtPass"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_logo"
+            android:drawableLeft="@drawable/ic_baseline_lock"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_login"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forgotpass"
+        android:gravity="center"
+    >
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:text="Login"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/forgotpass"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quên mật khẩu?"
+        android:layout_below="@+id/input_pass"
+        android:textStyle="italic"
+        android:gravity="right"
+        android:textSize="15sp"
+        android:textColor="#5893C3"/>
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/text_diff"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/layout_login"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hoặc đăng nhập bằng"></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_diff"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/button_fb"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_fb"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/white"
+            android:text="Facebook"/>
+        <Button
+            android:id="@+id/button_gmail"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_gmail"
+            android:textColor="@color/white"
+            android:text="Gmail"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Have an account?"/>
+        <TextView
+            android:onClick="onClick"
+            android:clickable="true"
+            android:id="@+id/txt_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="REGISTER"
+            android:textColor="#DD8D18"
+            tools:ignore="KeyboardInaccessibleWidget" />
+    </LinearLayout>
+
+
+</RelativeLayout>
